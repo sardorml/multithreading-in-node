@@ -4,7 +4,7 @@ console.time("time");
 (async () => {
   await Promise.all(
     glob
-      .sync("./images/*.jpeg")
+      .sync("./images/*.jpg")
       .filter((img) => img.indexOf("_small") < 0)
       .map(imageScale)
   );
